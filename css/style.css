@@ -465,4 +465,35 @@
 }
 .info__list-link:hover {
   border-bottom: 1px solid #ccc;
+}
+
+.footer {
+  background-color: #050038;
+  padding: 70px 0 45px;
+}
+.footer-top {
+  display: flex;
+}
+.footer-top .footer-social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 195px;
+  margin-right: 25px;
+}
+.footer-top__content-item {
+  display: flex;
+  align-items: start;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-top__image {
+  margin-right: 5px;
+}
+.footer-top__lang {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.footer-top__info:not(:last-child) {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */

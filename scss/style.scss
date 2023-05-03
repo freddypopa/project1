@@ -565,3 +565,34 @@ $default-color: #ffffff;
     }
   }
 }
+.footer{
+  background-color: $assent-color;
+  padding: 70px 0 45px;
+
+  &-top{
+    display: flex;
+  }
+  .footer-top &-social__list{
+    display: flex;
+    justify-content: space-between;
+    width: 195px;
+    margin-right: 25px;
+  }
+  &-top__content-item{
+    display: flex;
+    align-items: start;
+    color: $default-color;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &-top__image{
+    margin-right: 5px;
+  }
+  &-top__lang{
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  &-top__info:not(:last-child){
+    margin-right: 20px;
+  }
+}
