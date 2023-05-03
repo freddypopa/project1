@@ -49,7 +49,6 @@
   line-height: 24px;
 }
 .menu a {
-  text-decoration: none;
   color: #050038;
 }
 .menu__list {
@@ -133,7 +132,6 @@
   padding-right: 5px;
   border-bottom: 1px solid;
   color: #4262FF;
-  text-decoration: none;
 }
 
 .text {
@@ -186,7 +184,6 @@
   transition: all 0.3s;
 }
 .styles__menu-list-link {
-  text-decoration: none;
   color: #050038;
 }
 .styles__items {
@@ -221,7 +218,6 @@
   display: flex;
 }
 .team__menu-list-link {
-  text-decoration: none;
   color: #050038;
 }
 .team__menu-list-item {
@@ -290,7 +286,6 @@
 }
 .statistic__subtitle {
   color: #050038;
-  text-decoration: none;
   padding: 0 5px;
   border-bottom: 1px solid #050038;
   margin-bottom: 135px;
@@ -344,7 +339,6 @@
 }
 .join__link {
   margin-bottom: 40px;
-  text-decoration: none;
   color: #ffffff;
   padding: 0 5px;
   opacity: 0.6;
@@ -439,4 +433,36 @@
 }
 .history__blockquote-l::before {
   background-image: url("../img/lora.jpg");
+}
+
+.info {
+  background-color: #050038;
+}
+.info__items {
+  padding: 40px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #9B99AF;
+}
+.info__item {
+  max-width: 200px;
+}
+.info__list-title {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.info__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.info__list-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+.info__list-link:hover {
+  border-bottom: 1px solid #ccc;
 }/*# sourceMappingURL=style.css.map */

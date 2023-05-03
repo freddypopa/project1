@@ -12,6 +12,7 @@ ul[class],
 ol[class] {
   padding: 0;
   list-style-type: none;
+
 }
 
 body,
@@ -31,8 +32,12 @@ blockquote,
 dl,
 dd {
   margin: 0;
+ 
 }
-
+a{
+  text-decoration: none;
+}
+ 
 ul[class] {
   list-style: 0;
 }

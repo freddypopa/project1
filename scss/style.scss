@@ -57,7 +57,6 @@ $default-color: #ffffff;
   line-height: 24px;
 
   & a {
-    text-decoration: none;
     color: #050038;
   }
 
@@ -70,6 +69,7 @@ $default-color: #ffffff;
   }
 
 }
+
 .header-top__btn {
   color: $default-color;
   border: none;
@@ -133,6 +133,7 @@ $default-color: #ffffff;
 
 .work {
   margin-bottom: 140px;
+
   &__items {
     display: flex;
     justify-content: space-between;
@@ -156,7 +157,6 @@ $default-color: #ffffff;
   padding-right: 5px;
   border-bottom: 1px solid;
   color: #4262FF;
-  text-decoration: none;
 }
 
 .text {
@@ -166,6 +166,7 @@ $default-color: #ffffff;
 
 .tabs {
   margin-bottom: 148px;
+
   &__items {
     display: flex;
     justify-content: space-between;
@@ -217,7 +218,6 @@ $default-color: #ffffff;
   }
 
   &__menu-list-link {
-    text-decoration: none;
     color: $assent-color;
   }
 
@@ -261,7 +261,6 @@ $default-color: #ffffff;
     display: flex;
 
     &-link {
-      text-decoration: none;
       color: $assent-color;
     }
 
@@ -348,7 +347,6 @@ $default-color: #ffffff;
 
   &__subtitle {
     color: $assent-color ;
-    text-decoration: none;
     padding: 0 5px;
     border-bottom: 1px solid $assent-color;
     margin-bottom: 135px;
@@ -410,7 +408,6 @@ $default-color: #ffffff;
 
   &__link {
     margin-bottom: 40px;
-    text-decoration: none;
     color: $default-color;
     padding: 0 5px;
     opacity: .6;
@@ -530,3 +527,41 @@ $default-color: #ffffff;
   }
 }
 
+.info {
+  background-color: $assent-color;
+
+  &__items {
+    padding: 40px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9B99AF;
+  }
+
+  &__item {
+    max-width: 200px;
+
+  }
+
+  &__list-title {
+    font-size: 18px;
+    color: $default-color;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__list-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: $default-color;
+    text-decoration: none;
+    padding-bottom: 1px;
+
+    &:hover {
+      border-bottom:1px solid #ccc ;
+    }
+  }
+}
