@@ -22,6 +22,35 @@ $default-color: #ffffff;
   }
 }
 
+.menu__btn {
+  color: $default-color;
+  max-width: 35px;
+  height: 25px;
+  display: block;
+  position: relative;
+  display: none;
+
+  &-line,
+  &-line::before,
+  &-line::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    margin-left: -15px;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &-line::before {
+   transform: translateY(-8px);
+  }
+  &-line::after {
+   transform: translateY(6px);
+  }
+}
+
 
 .title {
   font-size: 48px;
