@@ -11,6 +11,15 @@ $default-color: #ffffff;
   color: $assent-color;
   font-family: $assent-fontFam;
   font-weight: $assent-fontWeight;
+
+  &-hf {
+    max-width: 1360px;
+    padding: 0 40px;
+    margin: 0 auto;
+    color: $assent-color;
+    font-family: $assent-fontFam;
+    font-weight: $assent-fontWeight;
+  }
 }
 
 
@@ -80,7 +89,7 @@ $default-color: #ffffff;
 }
 
 .header-content {
-  padding: 170px 0 214px;
+  padding: 58px 0 214px;
 
   &__items {
     display: flex;
@@ -561,38 +570,57 @@ $default-color: #ffffff;
     padding-bottom: 1px;
 
     &:hover {
-      border-bottom:1px solid #ccc ;
+      border-bottom: 1px solid #ccc;
     }
   }
 }
-.footer{
+
+.footer {
   background-color: $assent-color;
   padding: 70px 0 45px;
 
-  &-top{
+  &-top {
     display: flex;
   }
-  .footer-top &-social__list{
+
+  .footer-top &-social__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 195px;
-    margin-right: 25px;
+    margin: 0 25px 28px 0;
   }
-  &-top__content-item{
+
+  &-top__content-item {
     display: flex;
     align-items: start;
     color: $default-color;
     font-size: 16px;
     line-height: 24px;
   }
-  &-top__image{
+
+  &-top__image {
     margin-right: 5px;
   }
-  &-top__lang{
+
+  &-top__lang {
     text-transform: uppercase;
     margin-right: 20px;
   }
-  &-top__info:not(:last-child){
+
+  &-top__info {
+    color: $default-color;
+  }
+
+  &-top__info:not(:last-child) {
     margin-right: 20px;
+  }
+
+  &__info-list {
+    display: flex;
+  }
+
+  &__info-item:not(:last-child) {
+    margin-right: 14px;
   }
 }
