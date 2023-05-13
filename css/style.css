@@ -1,3 +1,7 @@
+body.test {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -385,7 +389,9 @@
 }
 .history__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  align-items: center;
 }
 .history__item {
   font-size: 18px;
@@ -533,7 +539,7 @@
     white-space: nowrap;
   }
   .history__items {
-    display: block;
+    justify-content: space-between;
   }
   .history__review {
     margin-bottom: 15px;

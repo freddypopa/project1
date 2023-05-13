@@ -3,6 +3,10 @@ $assent-fontFam: 'Roboto';
 $assent-fontWeight: 400;
 $default-color: #ffffff;
 
+body.test{
+ overflow: hidden;
+}
+ 
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -462,8 +466,9 @@ $default-color: #ffffff;
 
   &__items {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    position: relative;
+    align-items: center;
   }
 
   &__item {
@@ -647,7 +652,7 @@ $default-color: #ffffff;
   }
 
   .history__items{
-    display: block;
+    justify-content: space-between;
   }
 
   .history__review{
