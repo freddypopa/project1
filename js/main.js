@@ -1,34 +1,48 @@
 $(function () {
+  
+  $("#menu").on("click", "a", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+
+    $('body,html').animate({ scrollTop: top }, 700);
+  });
 
   $('.history__items').slick({
     arrows: false,
     slidesToShow: 3,
     responsive: [
       {
-      breakpoint: 1050,
-      settings:{
+        breakpoint: 1050,
+        settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-      }
-    },
+        }
+      },
       {
-      breakpoint: 747,
-      settings:{
+        breakpoint: 747,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
+        }
       }
-    }
-  ]
+    ]
   });
 
-  $('.menu__btn , .menu__list-link').on('click', function (e) {
+  $('.menu__btn ').on('click' , function (e) {
+    e.preventDefault;
+    $('body').toggleClass('test')
+  });
+
+  $('.menu__btn , .menu__list-link ').on('click', function (e) {
     e.preventDefault;
     $('.menu__btn').toggleClass('menu__btn--active');
     $('.header-top__btn').toggleClass('header-top__btn--active');
     $('.menu__list').toggleClass('menu__btn--active');
-    $('body').toggleClass('test')
   })
 
 

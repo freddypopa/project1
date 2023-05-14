@@ -1,4 +1,4 @@
-body.test {
+.test {
   overflow: hidden;
 }
 
@@ -15,6 +15,7 @@ body.test {
   max-width: 1360px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
   color: #050038;
   font-family: "Roboto";
   font-weight: 400;
@@ -37,12 +38,17 @@ body.test {
 .header-top {
   padding: 20px 0;
   border-bottom: 1px solid #F0F0F0;
-  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 2;
 }
 
 .header-top__inner {
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
 }
 
 .header-top__inner-info {
@@ -87,7 +93,7 @@ body.test {
 }
 
 .header-content {
-  padding: 58px 0 214px;
+  padding: 90px 0 100px;
 }
 .header-content__items {
   display: flex;
@@ -130,7 +136,7 @@ body.test {
 }
 
 .work {
-  margin-bottom: 140px;
+  padding: 110px 0 85px;
 }
 .work__items {
   display: flex;
@@ -159,7 +165,7 @@ body.test {
 }
 
 .tabs {
-  margin-bottom: 148px;
+  padding: 100px 0 75px;
 }
 .tabs__items {
   display: flex;
@@ -174,7 +180,7 @@ body.test {
 }
 
 .styles {
-  margin-bottom: 178px;
+  padding: 90px 0 90px;
 }
 .styles__title {
   margin-bottom: 35px;
@@ -223,7 +229,7 @@ body.test {
 }
 
 .team {
-  margin-bottom: 150px;
+  padding: 90px 0 150px;
 }
 .team__title {
   margin-bottom: 40px;
@@ -288,8 +294,7 @@ body.test {
 }
 
 .statistic {
-  padding: 118px 0 120px;
-  margin-bottom: 118px;
+  padding: 120px 0 120px;
   background-color: #FFD02F;
 }
 .statistic__top {
@@ -333,45 +338,8 @@ body.test {
   width: 350px;
 }
 
-.join {
-  margin-bottom: 120px;
-}
-.join__inner {
-  border-radius: 15px;
-  padding: 118px 0 120px;
-  background-color: #050038;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  color: #ffffff;
-}
-.join__title {
-  max-width: 661px;
-}
-.join__text {
-  font-size: 18px;
-  line-height: 24px;
-  max-width: 525px;
-  opacity: 0.6;
-}
-.join__link {
-  margin-bottom: 40px;
-  color: #ffffff;
-  padding: 0 5px;
-  opacity: 0.6;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-}
-.join__btn {
-  border: none;
-  border-radius: 25px;
-  padding: 12px 32px;
-  color: #ffffff;
-  background-color: #4262FF;
-}
-
 .history {
-  margin-bottom: 155px;
+  padding: 120px 0 45px;
 }
 .history__top {
   text-align: center;
@@ -452,7 +420,45 @@ body.test {
   background-image: url("../img/lora.jpg");
 }
 
+.join {
+  padding: 110px 0 120px;
+}
+.join__inner {
+  border-radius: 15px;
+  padding: 118px 0 120px;
+  background-color: #050038;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+.join__title {
+  max-width: 661px;
+}
+.join__text {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 525px;
+  opacity: 0.6;
+}
+.join__link {
+  margin-bottom: 40px;
+  color: #ffffff;
+  padding: 0 5px;
+  opacity: 0.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.join__btn {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 32px;
+  color: #ffffff;
+  background-color: #4262FF;
+}
+
 .info {
+  padding-bottom: 70px;
   background-color: #050038;
 }
 .info__items {
@@ -485,8 +491,8 @@ body.test {
 }
 
 .footer {
+  padding-bottom: 50px;
   background-color: #050038;
-  padding: 70px 0 45px;
 }
 .footer-top {
   display: flex;
@@ -662,7 +668,7 @@ body.test {
     min-width: 100%;
   }
   .header-content {
-    padding: 40px 0 180px;
+    padding-top: 90px;
   }
   .header-content__items {
     display: block;
@@ -710,9 +716,6 @@ body.test {
   }
 }
 @media (max-width: 460px) {
-  .header-content {
-    padding: 35px 0 120px;
-  }
   .header-content__item {
     width: 100%;
   }
@@ -730,10 +733,17 @@ body.test {
   .work,
   .tabs,
   .styles,
-  .team,
-  .history,
+  .history {
+    padding-bottom: 0;
+  }
+  .team {
+    padding-bottom: 35px;
+  }
   .join {
-    margin-bottom: 90px;
+    padding-bottom: 55px;
+  }
+  .header-content {
+    padding-bottom: 0;
   }
   .work__title,
   .tabs__title,
@@ -752,8 +762,7 @@ body.test {
     margin-bottom: 30px;
   }
   .statistic {
-    padding: 50px 0;
-    margin-bottom: 75px;
+    padding-top: 45px;
   }
   .statistic__subtitle {
     margin-bottom: 75px;
@@ -770,7 +779,7 @@ body.test {
     margin-bottom: 15px;
   }
   .team__item-info {
-    padding: 0 0 0 25px;
+    padding-left: 25px;
   }
   .team__integration-text {
     padding-top: 50px;
