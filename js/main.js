@@ -33,11 +33,15 @@ $(function () {
     ]
   });
 
-  $('.menu__btn ').on('click' , function (e) {
+  $('.menu__btn').on('click' , function (e) {
     e.preventDefault;
     $('body').toggleClass('test')
   });
+  $('.menu__list-link').on('click' , function (){
+    $('body').removeClass()
+  });
 
+  
   $('.menu__btn , .menu__list-link ').on('click', function (e) {
     e.preventDefault;
     $('.menu__btn').toggleClass('menu__btn--active');
