@@ -18,9 +18,8 @@ $default-color: #ffffff;
 
   &-hf {
     max-width: 1360px;
-    padding: 0 20px;
+
     margin: 0 auto;
-    position: relative;
     color: $assent-color;
     font-family: $assent-fontFam;
     font-weight: $assent-fontWeight;
@@ -43,18 +42,15 @@ $default-color: #ffffff;
 
 .header-top {
   padding: 20px 0;
+  position: relative;
   border-bottom: 1px solid #F0F0F0;
-  position: fixed;
-  left: 0;
-  right: 0;
   background-color: #ffffff;
-  z-index: 2;
 }
 
 .header-top__inner {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 15px; 
 }
 
 .header-top__inner-info {
@@ -67,7 +63,6 @@ $default-color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   width: 288px;
 }
 
@@ -715,7 +710,7 @@ $default-color: #ffffff;
     right: 0;
     text-align: center;
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(-120%);
 
     &-item:not(:last-child) {
       margin-right: 0;

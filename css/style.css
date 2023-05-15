@@ -13,9 +13,7 @@
 }
 .container-hf {
   max-width: 1360px;
-  padding: 0 20px;
   margin: 0 auto;
-  position: relative;
   color: #050038;
   font-family: "Roboto";
   font-weight: 400;
@@ -37,12 +35,9 @@
 
 .header-top {
   padding: 20px 0;
+  position: relative;
   border-bottom: 1px solid #F0F0F0;
-  position: fixed;
-  left: 0;
-  right: 0;
   background-color: #ffffff;
-  z-index: 2;
 }
 
 .header-top__inner {
@@ -595,7 +590,7 @@
     right: 0;
     text-align: center;
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   .menu__list-item:not(:last-child) {
     margin-right: 0;
