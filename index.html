@@ -1,21 +1,759 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miro</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="header">
-    <div class="container">
-      <div class="header-top">
-        assdsad
+  <header class="header">
+    <div class="header-top">
+      <div class="container-hf">
+        <div class="header-top__inner">
+          <div class="header-top__inner-info">
+            <a class="header__logo" href="#">
+              <img class="logo__image" src="img/logo.svg" alt="Логотип">
+            </a>
+            <nav class="menu" id="menu">
+
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#product">
+                    Продукт
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#decision">
+                    Решения
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#resources">
+                    Ресурсы
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#enterprises">
+                    Предприятия
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#rates">
+                    Тарифы
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+          <div. class="header-top__inner-function">
+            <a class="language-change" href="#">
+              <img class="language-change__image" src="img/globus.svg" alt="глобус">
+            </a>
+            <button class="header-top__btn">Регистрация</button>
+            <a class="menu__btn">
+              <span class="menu__btn-line"></span>
+            </a>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-content__items">
+          <div class="header-content__item">
+            <h1 class="title header-content__title">
+              Место для командной работы
+            </h1>
+            <p class="header-content__text">
+              Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.
+            </p>
+            <button class="header-content__btn header-content__btn1"></button>
+            <button class="header-content__btn header-content__btn2">Начать бесплатно</button>
+            <p class="header-content__descr">
+              Всегда бесплатно — кредитная карта не нужна
+            </p>
+            <div class="header-content__info">
+              <div class="header-content__info-item">
+                45M+ пользователей
+              </div>
+              <div class="header-content__info-item">
+                <img src="img/walmart.png" alt="иконка информация" class="header-content__info-image">
+              </div>
+              <div class="header-content__info-item">
+                <img src="img/cisco.png" alt="иконка информация" class="header-content__info-image">
+              </div>
+              <div class="header-content__info-item">
+                <img src="img/deloitte.png" alt="иконка информация" class="header-content__info-image">
+              </div>
+              <div class="header-content__info-item">
+                <img src="img/volvo.png" alt="иконка информация" class="header-content__info-image">
+              </div>
+            </div>
+          </div>
+          <div class="header-content__item">
+            <img class="header-content__item-image" src="img/header-content.jpg" alt="План">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="work" id="product">
+    <div class="container">
+      <div class="work__items">
+        <div class="work__item">
+          <h1 class="title work__title">
+            Работайте вместе, где бы вы ни находились
+          </h1>
+          <p class="work__text text">
+            Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и
+            совместно
+            заниматься творчеством в одном пространстве, из любой точки мира.
+          </p>
+          <a class="work__link link" href="#">
+            Узнать больше
+          </a>
+        </div>
+        <div class="work__item">
+          <img class="work__image" src="img/styles.jpg" alt="Работа">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tabs">
+    <div class="container">
+      <div class="tabs__items">
+        <div class="tabs__item">
+          <img class="tabs__image" src="img/tabsimg.jpg" alt="Ноутбук">
+        </div>
+        <div class="tabs__item">
+          <h1 class="title tabs__title">
+            Закройте лишние вкладки — всё уже здесь
+          </h1>
+          <p class="tabs__text text">
+            Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom, Miro
+            предлагает
+            более 100 интеграций с уже известными и полюбившимися вам инструментами.
+          </p>
+          <a class="tabs__link link" href="#">
+            Узнать больше
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="styles" id="decision">
+    <div class="container">
+      <h1 class="styles__title title">
+        Подходит для вашего стиля работы
+      </h1>
+      <nav class="styles__menu">
+        <ul class="styles__menu-list">
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Мозговые штурмы
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Диаграммы
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Встречи
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              SCRUM
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Картирование
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Дизайн-исследования
+            </a>
+          </li>
+          <li class="styles__menu-list-item">
+            <a class="styles__menu-list-link" href="#">
+              Планирование
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="styles__items">
+        <div class="styles__item">
+          <p class="styles__subtitle">
+            Мозговой штурм
+          </p>
+          <p class="styles__text">
+            Генерируйте творческие идеи и развивайте их с помощью стикеров, изображений, интеллект-карт, видео,
+            рисования и не
+            только.
+          </p>
+          <a class="styles__link link" href="#">
+            Узнать больше
+          </a>
+        </div>
+        <div class="styles__item">
+          <img class="styles__img" src="img/styles.jpg" alt="стили">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="resources">
+    <div class="container">
+      <h1 class="team__title title">
+        Создан для всех типов команд
+      </h1>
+      <nav class="team__menu">
+        <ul class="team__menu-list">
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              UX и дизайн
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Маркетинг
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Управление продуктом
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Разработка
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Консалтинг
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Agile-коучинг
+            </a>
+          </li>
+          <li class="team__menu-list-item">
+            <a class="team__menu-list-link" href="#">
+              Продажи
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="team__items">
+        <div class="team__item">
+          <div class="team__item-info">
+            <p class="team__subtitle">
+              Создавайте вайрфреймы
+            </p>
+            <p class="team__text">
+              Подключайте заказчиков к процессу дизайна
+            </p>
+            <p class="team__descr">
+              Проводите вовлекающие дизайн-воркшопы
+            </p>
+          </div>
+          <a class="team__link link" href="#">
+            Узнать больше
+          </a>
+          <div class="team__integration">
+            <p class="team__integration-text">
+              Интегрируйте ваши любимые инструменты
+            </p>
+            <ul class="team__integration-info">
+              <li class="team__integration-info-item">
+                <a class="team__integration-info-link" href="#">
+                  <img class="team__integration-info-image" src="img/crystall.png" alt="иконка">
+                </a>
+              </li>
+              <li class="team__integration-info-item">
+                <a class="team__integration-info-link" href="#">
+                  <img class="team__integration-info-image" src="img/xd.png" alt="иконка">
+                </a>
+              </li>
+              <li class="team__integration-info-item">
+                <a class="team__integration-info-link" href="#">
+                  <img class="team__integration-info-image" src="img/figma.png" alt="иконка">
+                </a>
+              </li>
+              <li class="team__integration-info-item">
+                <a class="team__integration-info-link" href="#">
+                  <img class="team__integration-info-image" src="img/film.png" alt="иконка">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="team__item">
+          <img class="team__item-image" src="img/team.jpg" alt="Команда">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statistic" id="enterprises">
+    <div class="container">
+      <div class="statistic__top">
+        <h2 class="statistic__title">
+          Почему и крупные, и небольшие компании доверяют Miro
+        </h2>
+        <a class="statistic__subtitle" href="#">
+          Связаться с отделом продаж
+        </a>
+      </div>
+      <div class="statistic__info">
+        <div class="statistic__info-items">
+          <div class="statistic__info-item statistic__info-item--mb">
+            <h2 class="statistic__info-title">
+              iso
+            </h2>
+            <p class="statistic__info-text">
+              Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001
+            </p>
+          </div>
+          <div class="statistic__info-item statistic__info-item--mb">
+            <h2 class="statistic__info-title">
+              #1
+            </h2>
+            <p class="statistic__info-text">
+              Платформа номер 1 для совместной работы, согласно отзывам на G2
+            </p>
+          </div>
+          <div class="statistic__info-item statistic__info-item--mb">
+            <h2 class="statistic__info-title">
+              99%
+            </h2>
+            <p class="statistic__info-text">
+              Почти все компании из списка Fortune 100 используют Miro
+            </p>
+          </div>
+          <div class="statistic__info-item">
+            <h2 class="statistic__info-title">
+              1000+
+            </h2>
+            <p class="statistic__info-text">
+              шаблонов, созданных сообществом и экспертами
+            </p>
+          </div>
+          <div class="statistic__info-item">
+            <h2 class="statistic__info-title">
+              45m+
+            </h2>
+            <p class="statistic__info-text">
+              пользователей во всём мире
+            </p>
+          </div>
+          <div class="statistic__info-item">
+            <h2 class="statistic__info-title">
+              100+
+            </h2>
+            <p class="statistic__info-text">
+              интеграций с различными онлайн-сервисами и инструментами
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="container">
+      <div class="history__top">
+        <h1 class="history__title title">
+          Нравится лучшим командам мира
+        </h1>
+        <button class="history__btn">
+          Все истории клиентов
+        </button>
+      </div>
+      <div class="history__items">
+        <div class="history__item history__item-vm">
+          <p class="history__review history__review-vm">
+            «Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды пострадает, так как
+            многие из нас
+            привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном
+            режиме».
+          </p>
+          <blockquote class="history__blockquote history__blockquote-r">
+            <p class="history__author">
+              Роксанна Мустафа
+            </p>
+            <p class="history__author-info">
+              Design Team Lead в VMware
+            </p>
+          </blockquote>
+        </div>
+        <div class="history__item history__item-docu">
+          <p class="history__review history__review-docu">
+            «Miro помогает решить проблему, связанную с основным пробелом в проектировании изделий: позволяет управлять
+            задачами с
+            участием проектировщиков изделий, проекты которых реализуются с помощью разных инструментов.»
+          </p>
+          <blockquote class="history__blockquote history__blockquote-j">
+            <p class="history__author">
+              Джейн Эшли
+            </p>
+            <p class="history__author-info">
+              Директор по проектированию <br> DocuSign
+            </p>
+          </blockquote>
+        </div>
+        <div class="history__item history__item-frog">
+          <p class="history__review history__review-frog">
+            «Когда мы начали использовать Miro, скептицизм сменился верой в инновации, теперь у нас есть инструмент,
+            который лежит в
+            основе любой работы, и мы продолжим использовать его и в будущем».
+          </p>
+          <blockquote class="history__blockquote history__blockquote-l">
+            <p class="history__author">
+              Лора Бейрд
+            </p>
+            <p class="history__author-info">
+              Associate Design Director в frog
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="rates">
+    <div class="container">
+      <div class="join__inner">
+        <h1 class="join__title title">
+          Присоединяйтесь к 45M миллионам пользователей уже сегодня
+        </h1>
+        <p class="join__text">
+          Начните бесплатно и перейдите на другой тариф в любое время. Хотите стать корпоративным клиентом?
+        </p>
+        <a class="join__link" href="#">
+          Свяжитесь с отделом продаж
+        </a>
+        <button class="join__btn">
+          Зарегистрироваться
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container-hf">
+      <div class="info__items">
+        <div class="info__item">
+          <h6 class="info__list-title info__list-title-p">
+            Продукт
+          </h6>
+          <ul class="info__list info__list-p">
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                О продукте
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Приложения и интеграции
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Шаблоны
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miroverse
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Платформа Разработчика Miro
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miro для устройств
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Безопасность и соответствие
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Доступность
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Журнал изменений
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info__item">
+          <h6 class="info__list-title info__list-title-r">
+            Решения
+          </h6>
+          <ul class="info__list info__list-r">
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Встречи и воркшопы
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Мозговой штурм
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Agile методы в работе
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Диаграмминг
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Исследование
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Стратегия и планирование
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Интеллект-карты
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Концептуальные карты
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Онлайн-стикеры
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Блок-схемы
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Вайрфреймы
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info__item">
+          <h6 class="info__list-title info__list-title-re">
+            Ресурсы
+          </h6>
+          <ul class="info__list info__list-re">
+
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Академия Miro
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Служба поддержки
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Статус
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Cообщество Miro
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miro Professional Network
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miro Эксперты
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miro Эксперты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info__item">
+          <h6 class="info__list-title info__list-title-c">
+            Компания
+          </h6>
+          <ul class="info__list info__list-c">
+
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Карьера 🚀
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Miro в новостях
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Истории клиентов
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info__item">
+          <h6 class="info__list-title info__list-title-t">
+            Тарифы и планы
+          </h6>
+          <ul class="info__list info__list-t">
+
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Тарифы
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Бизнес
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Предприятия
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Консультанты
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Образование
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Стартапы
+              </a>
+            </li>
+            <li class="info__list-item">
+              <a class="info__list-link" href="#">
+                Некоммерческие организации
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-hf">
+      <div class="footer-top">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <img src="img/twitter.svg" alt="иконка twitter">
+          </li>
+          <li class="footer-social__item">
+            <img src="img/facebook.svg" alt="иконка facebook">
+          </li>
+          <li class="footer-social__item">
+            <img src="img/linkedIn.svg" alt="иконка linkedIn">
+          </li>
+          <li class="footer-social__item">
+            <img src="img/instagram.svg" alt="иконка instagram">
+          </li>
+          <li class="footer-social__item">
+            <img src="img/youtube.svg" alt="иконка youtube">
+          </li>
+        </ul>
+        <div class="footer-top__content">
+          <div class="footer-top__content-item">
+            <a class="footer-top__lang">ru</a>
+            <a class="footer-top__info" href="#">© 2023 Miro</a>
+            <a class="footer-top__info" href="#">Условия пользования</a>
+            <a class="footer-top__info" href="#">Политика конфиденциальности</a>
+            <a class="footer-top__info" href="#">Управление файлами cookies</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__info">
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <a href="#" class="footer__info-link">
+              <img class="footer__info-image" src="img/apple.png" alt="apple icon">
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#" class="footer__info-link">
+              <img class="footer__info-image" src="img/google.png" alt="google icon">
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#" class="footer__info-link">
+              <img class="footer__info-image" src="img/miro.png" alt="miro icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
