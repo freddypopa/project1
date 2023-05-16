@@ -1,5 +1,5 @@
 $(function () {
-  
+
   $("#menu").on("click", "a", function (event) {
     event.preventDefault();
 
@@ -11,8 +11,10 @@ $(function () {
   });
 
   $('.history__items').slick({
-    arrows: false,
     slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1050,
@@ -20,6 +22,8 @@ $(function () {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+          dots: true,
+
         }
       },
       {
@@ -28,20 +32,21 @@ $(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
+          dots: true,
         }
       }
     ]
   });
 
-  $('.menu__btn').on('click' , function (e) {
+  $('.menu__btn').on('click', function (e) {
     e.preventDefault;
     $('body').toggleClass('test')
   });
-  $('.menu__list-link').on('click' , function (){
+  $('.menu__list-link').on('click', function () {
     $('body').removeClass()
   });
 
-  
+
   $('.menu__btn , .menu__list-link ').on('click', function (e) {
     e.preventDefault;
     $('.menu__btn').toggleClass('menu__btn--active');
